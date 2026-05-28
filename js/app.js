@@ -1,16 +1,5 @@
-ALLPROMPTZ/
-│
-├── index.html
-├── about.html
-├── contact.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── app.js
-│
-└── assets
+<}ALLPROMPTZ
+
     └── (images optional)
     <body></body>
     <\p>
