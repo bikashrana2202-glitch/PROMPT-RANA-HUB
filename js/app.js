@@ -1,4 +1,21 @@
-<}ALLPROMPTZ
+// COPY BUTTON
+function copy(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert("Copied ✔");
+}
+
+// SEARCH FILTER
+document.getElementById("search").addEventListener("keyup", function () {
+  let value = this.value.toLowerCase();
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    card.style.display = card.innerText.toLowerCase().includes(value)
+      ? "block"
+      : "none";
+  });
+});<}ALLPROMPTZ
 
     └── (images optional)
     <body></body>
