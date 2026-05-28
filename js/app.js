@@ -81,7 +81,38 @@ nav a {
   <a href="contact.html">Contact</a>
 </nav>
 
-<section class="search-box">
+<section class="search-box">// COPY FUNCTION
+function copy(id) {
+  let text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert("Copied ✔");
+}
+
+// FILTER FUNCTION
+function filter(type) {
+  let cards = document.querySelectorAll(".card");
+  cards.forEach(card => {
+    if (type === "all") {
+      card.style.display = "block";
+    } else {
+      card.classList.contains(type)
+        ? card.style.display = "block"
+        : card.style.display = "none";
+    }
+  });
+}
+
+// SEARCH
+document.getElementById("search").addEventListener("keyup", function() {
+  let value = this.value.toLowerCase();
+  let cards = document.querySelectorAll(".card");
+
+  cards.forEach(card => {
+    card.style.display = card.innerText.toLowerCase().includes(value)
+      ? "block"
+      : "none";
+  });
+});
   <input type="text" id="search" placeholder="Search prompts...">
 </section>
 
