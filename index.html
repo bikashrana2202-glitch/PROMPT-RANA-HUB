@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AllPromptZ PRO 🔥</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>🔥 AllPromptZ PRO</h1>
+  <p>Best AI Photo & Text Prompts</p>
+</header>
+
+<nav>
+  <button onclick="filter('all')">All</button>
+  <button onclick="filter('photo')">Photo Prompts</button>
+  <button onclick="filter('logo')">Logo</button>
+  <button onclick="filter('insta')">Instagram</button>
+</nav>
+
+<input type="text" id="search" placeholder="Search prompts...">
+
+<div id="container">
+
+  <!-- PHOTO PROMPTS -->
+  <div class="card photo">
+    <h3>📸 Ultra Realistic Portrait</h3>
+    <p id="p1">A cinematic portrait of a young man standing in neon city, ultra realistic, 8k, soft lighting</p>
+    <button onclick="copy('p1')">Copy</button>
+  </div>
+
+  <div class="card photo">
+    <h3>🌄 Nature AI Image</h3>
+    <p id="p2">A beautiful mountain landscape, sunrise, fog, ultra detailed, 4k photography style</p>
+    <button onclick="copy('p2')">Copy</button>
+  </div>
+
+  <!-- LOGO PROMPT -->
+  <div class="card logo">
+    <h3>🎨 Logo Design</h3>
+    <p id="p3">Minimal tech logo, modern style, blue neon glow, vector, clean design</p>
+    <button onclick="copy('p3')">Copy</button>
+  </div>
+
+  <!-- INSTAGRAM PROMPT -->
+  <div class="card insta">
+    <h3>📱 Instagram Caption</h3>
+    <p id="p4">Write viral Instagram caption with emojis and trending hashtags for travel post</p>
+    <button onclick="copy('p4')">Copy</button>
+  </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
